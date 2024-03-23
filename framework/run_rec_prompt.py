@@ -66,17 +66,22 @@ if __name__ == "__main__":
             "guide_instruction": "guide_instruction_4tune3_cot", "epoch": 10, "sample_num": 1},
         "4tune4_io": {
             "recommender": "gpt4_1106", "optimizer": "gpt4_1106", "rec_max_tokens": 50, "return_json_rec": True,
-            "initial_prompt": "io_prompt", "system_instruction": "rankonly_json_format", "add_rank_first": False,
-            "observation_instruction": "observation_instruction_4tune4_io", "valid_sample_num": 10,
-            "guide_instruction": "guide_instruction_4tune4_io", "epoch": 1, "sample_num": 1},
+            "initial_prompt": "io_prompt", "system_instruction": "rankonly_json_format",
+            "observation_instruction": "observation_instruction_4tune4_io", "valid_sample_num": 100,
+            "guide_instruction": "guide_instruction_4tune4_io", "epoch": 3, "sample_num": 1},
+        "4tune4_io_cat": {
+            "recommender": "gpt4_1106", "optimizer": "gpt4_1106", "rec_max_tokens": 50, "return_json_rec": True,
+            "initial_prompt": "io_prompt", "system_instruction": "rankonly_json_format", "dataset": "valid_cat",
+            "observation_instruction": "observation_instruction_4tune4_io", "valid_sample_num": 100,
+            "guide_instruction": "guide_instruction_4tune4_io", "epoch": 3, "sample_num": 1},
         "4tune4_cot": {
             "recommender": "gpt4_1106", "optimizer": "gpt4_1106", "rec_max_tokens": 50, "return_json_rec": True,
             "initial_prompt": "cot_pure_prompt", "system_instruction": "rankonly_json_format",
-            "observation_instruction": "observation_instruction_4tune4_cot", "valid_sample_num": 10,
-            "guide_instruction": "guide_instruction_4tune4_cot", "epoch": 1, "sample_num": 1},
+            "observation_instruction": "observation_instruction_4tune4_cot", "valid_sample_num": 100,
+            "guide_instruction": "guide_instruction_4tune4_cot", "epoch": 3, "sample_num": 1},
         "4tune4_cot_cat": {
             "recommender": "gpt4_1106", "optimizer": "gpt4_1106", "rec_max_tokens": 50, "return_json_rec": True,
-            "initial_prompt": "cot_pure_prompt", "system_instruction": "rankonly_json_format", "dataset": "test_cat",
+            "initial_prompt": "cot_pure_prompt", "system_instruction": "rankonly_json_format", "dataset": "valid_cat",
             "observation_instruction": "observation_instruction_4tune4_cot", "valid_sample_num": 100,
             "guide_instruction": "guide_instruction_4tune4_cot", "epoch": 3, "sample_num": 1, "add_rank_first": False},
     }

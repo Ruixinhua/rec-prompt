@@ -15,6 +15,6 @@ You should first create a JSON file under config/ with the following API_KEY:
 
 Running the framework requires the following steps:
 1. Install the required libraries by running `pip install -r requirements.txt`
-2. Execute the RecPrompt optimizing script by running `python framework/run_rec_prompt.py`
+2. Execute the RecPrompt optimizing script by running `python framework/run_rec_prompt.py --tuning_list=3tune3_io,4tune3_io`
 3. Execute the recommendation task to reproduce the results by running `python framework/run_rec_test.py`
 4. Execute evaluation of TopicScore by running `python evaluation/evaluate_news_topics.py`
