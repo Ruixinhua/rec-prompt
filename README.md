@@ -2,7 +2,7 @@
 
 RecPrompt is the first prompt engineering framework that integrates a series of intermediate reasoning steps for news recommendation, leveraging the capabilities of LLMs to perform complex news recommendation tasks. This framework incorporates a prompt optimizer that applies an iterative bootstrapping process, significantly improving the alignment of news content with user preferences.
 
-![RecPrompt](image/rec_promt.png)
+![RecPrompt](image/rec_prompt.png)
 
 
 You should first create a JSON file under config/ with the following API_KEY:
